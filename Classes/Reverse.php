@@ -2,14 +2,9 @@
 
 namespace Main;
 
-class Reverse
+class Reverse implements StringInterface
 {
-    public function __construct(public string $word)
-    {
-        $this->word = $word;
-    }
-
-    public function mb_strrev($word, $encoding = null)
+    public function mb_strrev(string $word, $encoding = null): string
     {
         if (null === $encoding) {
             $encoding = mb_detect_encoding($word);

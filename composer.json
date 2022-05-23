@@ -5,5 +5,8 @@
             "Main\\": "Classes/",
             "Files\\": "Files/"
         }
+    },
+    "require": {
+        "phpstan/phpstan": "^1.7"
     }
 }
