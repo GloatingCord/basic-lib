@@ -1,0 +1,8 @@
+{
+    "name": "gloatingcord26/basic-lib",
+    "autoload": {
+        "psr-4": {
+            "Main\\": "lib/"
+        }
+    }
+}
