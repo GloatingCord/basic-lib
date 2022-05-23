@@ -2,7 +2,8 @@
     "name": "gloatingcord26/basic-lib",
     "autoload": {
         "psr-4": {
-            "Main\\": "lib/"
+            "Main\\": "Classes/",
+            "Files\\": "Files/"
         }
     }
 }
