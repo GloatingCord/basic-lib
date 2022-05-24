@@ -2,10 +2,9 @@
 
 namespace Main;
 
-class Reverse implements StringInterface
+class StringFuncs implements StringInterface
 {
-    public function mb_strrev(string $word, $encoding = null): string
-    {
+    public function mb_strrev(string $word, $encoding = null): string {
         if (null === $encoding) {
             $encoding = mb_detect_encoding($word);
         }
@@ -17,5 +16,11 @@ class Reverse implements StringInterface
         }
 
         return $reversed;
+    }
+
+    public function create_secure_password(string $word): string {
+        $password = password_hash($word, PASSWORD_DEFAULT);
+
+        return $password;
     }
 }
