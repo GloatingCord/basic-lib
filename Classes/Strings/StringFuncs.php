@@ -1,6 +1,8 @@
 <?php
 
-namespace Main;
+namespace Main\Strings;
+
+use \Exception;
 
 class StringFuncs implements StringInterface
 {
