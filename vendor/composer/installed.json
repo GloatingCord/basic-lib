@@ -1,18 +1,86 @@
 {
     "packages": [
         {
-            "name": "phpstan/phpstan",
-            "version": "1.7.0",
-            "version_normalized": "1.7.0.0",
+            "name": "gloatingcord26/basic-calculator",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa"
+                "url": "https://github.com/GloatingCord/basic-calculator.git",
+                "reference": "c437cca600a8c0254712641507bf9f6c8837e783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/509b3d6da631de31494dc21adedb30d73970e5aa",
-                "reference": "509b3d6da631de31494dc21adedb30d73970e5aa",
+                "url": "https://api.github.com/repos/GloatingCord/basic-calculator/zipball/c437cca600a8c0254712641507bf9f6c8837e783",
+                "reference": "c437cca600a8c0254712641507bf9f6c8837e783",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.7"
+            },
+            "time": "2022-05-27T14:34:49+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Main\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/GloatingCord/basic-calculator/issues",
+                "source": "https://github.com/GloatingCord/basic-calculator/tree/main"
+            },
+            "install-path": "../gloatingcord26/basic-calculator"
+        },
+        {
+            "name": "gloatingcord26/basic-string-functions",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GloatingCord/basic-string-functions.git",
+                "reference": "e307086ea82543124e06f9613e7e8fb94dc6162e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GloatingCord/basic-string-functions/zipball/e307086ea82543124e06f9613e7e8fb94dc6162e",
+                "reference": "e307086ea82543124e06f9613e7e8fb94dc6162e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.7"
+            },
+            "time": "2022-05-27T14:35:10+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Main\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/GloatingCord/basic-string-functions/issues",
+                "source": "https://github.com/GloatingCord/basic-string-functions/tree/main"
+            },
+            "install-path": "../gloatingcord26/basic-string-functions"
+        },
+        {
+            "name": "phpstan/phpstan",
+            "version": "1.7.2",
+            "version_normalized": "1.7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c602f80d66ba425943b0f4aaa27010c822dd8f87",
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87",
                 "shasum": ""
             },
             "require": {
@@ -21,7 +89,7 @@
             "conflict": {
                 "phpstan/phpstan-shim": "*"
             },
-            "time": "2022-05-23T15:11:29+00:00",
+            "time": "2022-05-26T12:59:20+00:00",
             "bin": [
                 "phpstan",
                 "phpstan.phar"
@@ -40,7 +108,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.7.0"
+                "source": "https://github.com/phpstan/phpstan/tree/1.7.2"
             },
             "funding": [
                 {
@@ -64,5 +132,7 @@
         }
     ],
     "dev": true,
-    "dev-package-names": []
+    "dev-package-names": [
+        "phpstan/phpstan"
+    ]
 }

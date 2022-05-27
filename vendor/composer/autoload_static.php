@@ -15,20 +15,14 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         array (
             'Main\\' => 5,
         ),
-        'F' => 
-        array (
-            'Files\\' => 6,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Main\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Classes',
-        ),
-        'Files\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/Files',
+            0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/..' . '/gloatingcord26/basic-calculator/src',
+            2 => __DIR__ . '/..' . '/gloatingcord26/basic-string-functions/src',
         ),
     );
 

@@ -1,21 +1,11 @@
 <?php
 
-namespace Files;
+require_once __DIR__.'/../vendor/autoload.php';
 
-use Main\Strings\StringFuncs;
-use Main\Numbers\NumberFuncs;
-
-require_once 'vendor/autoload.php';
+use Main\Library;
 
 $word = 'drakula';
 
-$string_functions = new StringFuncs;
+$library = new Library();
 
-$number_functions = new NumberFuncs;
-
-echo $string_functions->create_secure_password($word).PHP_EOL;
-
-echo $string_functions->mb_strrev($word).PHP_EOL;
-
-echo $number_functions->add(32.2, 23.2);
-
+echo $library->nummbers(32.1, 35.76);

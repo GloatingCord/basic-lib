@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Main\\' => array($baseDir . '/Classes'),
-    'Files\\' => array($baseDir . '/Files'),
+    'Main\\' => array($baseDir . '/src', $vendorDir . '/gloatingcord26/basic-calculator/src', $vendorDir . '/gloatingcord26/basic-string-functions/src'),
 );
