@@ -8,4 +8,5 @@ $word = 'drakula';
 
 $library = new Library();
 
-echo $library->nummbers(32.1, 35.76);
+echo $library->numbers()->add(32.1, 35.76);
+echo $library->strings()->reverseString($word);

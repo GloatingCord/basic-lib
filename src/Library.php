@@ -4,15 +4,39 @@ namespace Main;
 
 class Library
 {
-    public function nummbers($num1, $num2)
+    public function numbers()
     {
-        $number_functions = new NumberFuncs();
+        return $this;
+    }
+    
+    public function add($num1, $num2)
+    {
+        $numberFunctions = new NumberFuncs();
 
-        return $number_functions->add($num1, $num2).PHP_EOL;
+        return $numberFunctions->add($num1, $num2).PHP_EOL;
+    }
+
+    public function sub($num1, $num2)
+    {
+        $numberFunctions = new NumberFuncs();
+
+        return $numberFunctions->sub($num1, $num2).PHP_EOL;
     }
 
     public function strings()
+    {   
+        return $this;
+    }
+    public function reverseString($word)
     {
-        $string_functions = new StringFuncs();
+        $stringFunctions = new StringFuncs();
+
+        return $stringFunctions->mb_strrev($word).PHP_EOL;
+    }
+    public function createPassword($word)
+    {
+        $stringFunctions = new StringFuncs();
+
+        return $stringFunctions->create_secure_password($word).PHP_EOL;
     }
 }
