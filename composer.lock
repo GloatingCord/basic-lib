@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GloatingCord/basic-calculator.git",
-                "reference": "c437cca600a8c0254712641507bf9f6c8837e783"
+                "reference": "90609172170f87ed420835e51a64882f7fade20d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GloatingCord/basic-calculator/zipball/c437cca600a8c0254712641507bf9f6c8837e783",
-                "reference": "c437cca600a8c0254712641507bf9f6c8837e783",
+                "url": "https://api.github.com/repos/GloatingCord/basic-calculator/zipball/90609172170f87ed420835e51a64882f7fade20d",
+                "reference": "90609172170f87ed420835e51a64882f7fade20d",
                 "shasum": ""
             },
             "require-dev": {
@@ -172,7 +172,7 @@
                 "issues": "https://github.com/GloatingCord/basic-calculator/issues",
                 "source": "https://github.com/GloatingCord/basic-calculator/tree/main"
             },
-            "time": "2022-05-27T14:34:49+00:00"
+            "time": "2022-05-27T19:30:14+00:00"
         },
         {
             "name": "gloatingcord26/basic-string-functions",
@@ -180,12 +180,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GloatingCord/basic-string-functions.git",
-                "reference": "e307086ea82543124e06f9613e7e8fb94dc6162e"
+                "reference": "173c487596fbb61f1d6cd1fffd57633bc67ad267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GloatingCord/basic-string-functions/zipball/e307086ea82543124e06f9613e7e8fb94dc6162e",
-                "reference": "e307086ea82543124e06f9613e7e8fb94dc6162e",
+                "url": "https://api.github.com/repos/GloatingCord/basic-string-functions/zipball/173c487596fbb61f1d6cd1fffd57633bc67ad267",
+                "reference": "173c487596fbb61f1d6cd1fffd57633bc67ad267",
                 "shasum": ""
             },
             "require-dev": {
@@ -203,7 +203,7 @@
                 "issues": "https://github.com/GloatingCord/basic-string-functions/issues",
                 "source": "https://github.com/GloatingCord/basic-string-functions/tree/main"
             },
-            "time": "2022-05-27T14:35:10+00:00"
+            "time": "2022-05-27T19:30:27+00:00"
         },
         {
             "name": "pdepend/pdepend",

@@ -15,9 +15,13 @@
     },
     "scripts": {
         "phpstan": [
-            "phpstan analyze --level max Classes/ Files/"
+            "phpstan analyze --level max src"
+        ],
+        "phpmd": [
+            "phpmd src xml rulesets.xml"
         ],
         "test": [
+            "@phpmd",
             "@phpstan"
         ]
     }

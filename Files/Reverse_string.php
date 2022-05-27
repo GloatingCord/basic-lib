@@ -10,3 +10,4 @@ $library = new Library();
 
 echo $library->numbers()->add(32.1, 35.76);
 echo $library->strings()->reverseString($word);
+echo $library->strings()->createPassword($word);

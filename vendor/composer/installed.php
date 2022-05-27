@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'aa05a03b45cf73e52ac3474565b03a2073de42ce',
+        'reference' => '923d9882badc7d1a43d16ab3434d91c09cd8dae3',
         'name' => 'gloatingcord26/basic-lib',
         'dev' => true,
     ),
@@ -36,7 +36,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'c437cca600a8c0254712641507bf9f6c8837e783',
+            'reference' => '90609172170f87ed420835e51a64882f7fade20d',
             'dev_requirement' => false,
         ),
         'gloatingcord26/basic-lib' => array(
@@ -45,7 +45,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'aa05a03b45cf73e52ac3474565b03a2073de42ce',
+            'reference' => '923d9882badc7d1a43d16ab3434d91c09cd8dae3',
             'dev_requirement' => false,
         ),
         'gloatingcord26/basic-string-functions' => array(
@@ -56,7 +56,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'e307086ea82543124e06f9613e7e8fb94dc6162e',
+            'reference' => '173c487596fbb61f1d6cd1fffd57633bc67ad267',
             'dev_requirement' => false,
         ),
         'pdepend/pdepend' => array(
