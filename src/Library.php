@@ -2,6 +2,9 @@
 
 namespace Main;
 
+use BasicCalculator\Main\NumberFuncs;
+use BasicStringFunctions\Main\StringFuncs;
+
 class Library
 {
     
@@ -16,6 +19,18 @@ class Library
         $numberFunctions = new NumberFuncs();
 
         return $numberFunctions->sub($num1, $num2);
+    }
+    public function mul(float|int $num1, float|int $num2): float|int
+    {
+        $numberFunctions = new NumberFuncs();
+
+        return $numberFunctions->mul($num1, $num2);
+    }
+    public function dev(float|int $num1, float|int $num2): float|int
+    {
+        $numberFunctions = new NumberFuncs();
+
+        return $numberFunctions->dev($num1, $num2);
     }
     public function reverseString(string $word): string
     {

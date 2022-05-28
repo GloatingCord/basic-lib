@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2a9122dc5ca988b3d2aa58b36a337804fb89e1ed',
+        'reference' => '71135483975030b5f02c091eb534a3858970b3ad',
         'name' => 'gloatingcord26/basic-lib',
         'dev' => true,
     ),
@@ -54,7 +54,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2a9122dc5ca988b3d2aa58b36a337804fb89e1ed',
+            'reference' => '71135483975030b5f02c091eb534a3858970b3ad',
             'dev_requirement' => false,
         ),
         'gloatingcord26/basic-string-functions' => array(
