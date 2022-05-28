@@ -11,7 +11,6 @@ class Library
 
         return $numberFunctions->add($num1, $num2);
     }
-
     public function sub(float|int $num1, float|int $num2): float|int
     {
         $numberFunctions = new NumberFuncs();
