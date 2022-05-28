@@ -7,11 +7,12 @@
     },
     "require": {
         "gloatingcord26/basic-calculator": "dev-main",
-        "gloatingcord26/basic-string-functions": "dev-main",
-        "phpmd/phpmd": "^2.12"
+        "gloatingcord26/basic-string-functions": "dev-main"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.7"
+        "phpstan/phpstan": "^1.7",
+        "phpunit/phpunit": "^9.5",
+        "phpmd/phpmd": "^2.12"
     },
     "scripts": {
         "phpstan": [
@@ -20,7 +21,11 @@
         "phpmd": [
             "phpmd src xml rulesets.xml"
         ],
+        "phpunit": [
+            "vendor/bin/phpunit src/OutputTest.php"
+        ],
         "test": [
+            "@phpunit",
             "@phpmd",
             "@phpstan"
         ]
