@@ -1,12 +1,16 @@
 <?php
 
-namespace Main;
+namespace Test;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use BasicLibrary\Main\Library;
 use PHPUnit\Framework\TestCase;
-use Main\Library;
 
+/**
+ * @internal
+ * @coversNothing
+ */
 final class OutputTest extends TestCase
 {
     public function testExpectWordActualReverseWord(): void
@@ -14,7 +18,7 @@ final class OutputTest extends TestCase
         $library = new Library();
         $this->expectOutputString('alukard');
 
-        print $library->reverseString("drakula");
+        echo $library->reverseString('drakula');
     }
 
     public function testExpectNumberActualNumber(): void

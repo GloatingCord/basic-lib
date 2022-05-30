@@ -4,15 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
+class ComposerStaticInit397116f1748a82b402e45e864cb9fa70
 {
     public static $files = array (
-        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
-        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
+        'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,6 +31,7 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
@@ -45,10 +47,6 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
             'PhpParser\\' => 10,
             'PDepend\\' => 8,
         ),
-        'M' => 
-        array (
-            'Main\\' => 5,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -58,6 +56,12 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         array (
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Pcre\\' => 14,
+        ),
+        'B' => 
+        array (
+            'BasicStringFunctions\\Main\\' => 26,
+            'BasicLibrary\\Main\\' => 18,
+            'BasicCalculator\\Main\\' => 21,
         ),
     );
 
@@ -75,6 +79,10 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         'Test\\' => 
         array (
             0 => __DIR__ . '/../..' . '/test',
+        ),
+        'Symfony\\Polyfill\\Php81\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -120,12 +128,6 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         array (
             0 => __DIR__ . '/..' . '/pdepend/pdepend/src/main/php/PDepend',
         ),
-        'Main\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-            1 => __DIR__ . '/..' . '/gloatingcord26/basic-calculator/src',
-            2 => __DIR__ . '/..' . '/gloatingcord26/basic-string-functions/src',
-        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -141,6 +143,18 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         'Composer\\Pcre\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
+        'BasicStringFunctions\\Main\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gloatingcord26/basic-string-functions/src',
+        ),
+        'BasicLibrary\\Main\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'BasicCalculator\\Main\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gloatingcord26/basic-calculator/src',
         ),
     );
 
@@ -572,6 +586,7 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -783,10 +798,10 @@ class ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc2febbf0ef1be279c69b53227fcafd0a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit397116f1748a82b402e45e864cb9fa70::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit397116f1748a82b402e45e864cb9fa70::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit397116f1748a82b402e45e864cb9fa70::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit397116f1748a82b402e45e864cb9fa70::$classMap;
 
         }, null, ClassLoader::class);
     }
