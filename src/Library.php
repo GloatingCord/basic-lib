@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicLibrary\Main;
+namespace GloatingCord26\BasicLibrary;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
