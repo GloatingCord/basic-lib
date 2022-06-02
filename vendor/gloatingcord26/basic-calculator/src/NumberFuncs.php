@@ -1,26 +1,32 @@
 <?php
 
-namespace BasicCalculator\Main;
+namespace GloatingCord26\BasicCalculator;
 
 class NumberFuncs implements NumberInterface
 {
-    public function add(int|float $num1, int|float $num2): int|float
-    {
-        return $num1 + $num2;
+    public function __construct(
+        private int $num1,
+        private int $num2
+    ) {
     }
 
-    public function sub(int|float $num1, int|float $num2): int|float
+    public function add(): int
     {
-        return $num1 - $num2;
+        return $this->num1 + $this->num2;
     }
 
-    public function mul(int|float $num1, int|float $num2): int|float
+    public function sub(): int
     {
-        return $num1 * $num2;
+        return $this->num1 - $this->num2;
     }
 
-    public function dev(int|float $num1, int|float $num2): int|float
+    public function mul(): int
     {
-        return $num1 / $num2;
+        return $this->num1 * $this->num2;
+    }
+
+    public function dev(): int
+    {
+        return $this->num1 / $this->num2;
     }
 }

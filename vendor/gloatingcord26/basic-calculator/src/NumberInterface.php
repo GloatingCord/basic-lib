@@ -1,14 +1,14 @@
 <?php
 
-namespace BasicCalculator\Main;
+namespace GloatingCord26\BasicCalculator;
 
 interface NumberInterface
 {
-    public function add(int|float $num1, int|float $num2);
+    public function add();
 
-    public function sub(int|float $num1, int|float $num2);
+    public function sub();
 
-    public function mul(int|float $num1, int|float $num2);
+    public function mul();
 
-    public function dev(int|float $num1, int|float $num2);
+    public function dev();
 }

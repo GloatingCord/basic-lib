@@ -1,10 +1,9 @@
 <?php
 
-namespace GloatingCord26\Test;
+namespace GloatingCord26\Testing;
 
-require_once __DIR__.'/../vendor/autoload.php';
-
-use BasicLibrary\Main\Library;
+use GloatingCord26\BasicLibrary\NumberLibrary;
+use GloatingCord26\BasicLibrary\StringLibrary;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -15,16 +14,16 @@ final class OutputTest extends TestCase
 {
     public function testExpectWordActualReverseWord(): void
     {
-        $library = new Library();
-        $this->expectOutputString('alukard');
+        $library = new StringLibrary('alukard');
+        $this->expectOutputString($library->reverseString());
 
-        echo $library->reverseString('drakula');
+        echo $library->reverseString();
     }
 
     public function testExpectNumberActualNumber(): void
     {
-        $library = new Library();
+        $library = new NumberLibrary(1, 17, 13);
 
-        $this->assertSame(30.0, $library->add(17.5, 12.5));
+        $this->assertSame(30, $library->numberFuncs());
     }
 }

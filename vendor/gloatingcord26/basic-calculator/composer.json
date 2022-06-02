@@ -2,7 +2,7 @@
     "name": "gloatingcord26/basic-calculator",
     "autoload": {
         "psr-4": {
-            "BasicCalculator\\Main\\": "src/"
+            "GloatingCord26\\BasicCalculator\\": "src/"
         }
     },
     "require-dev": {

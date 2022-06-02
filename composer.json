@@ -3,7 +3,7 @@
     "autoload": {
         "psr-4": {
             "GloatingCord26\\BasicLibrary\\": "src/",
-            "Test\\": "test/"
+            "GloatingCord26\\Testing\\": "test/"
         }
     },
     "require": {
@@ -17,7 +17,7 @@
     },
     "scripts": {
         "phpstan": [
-            "phpstan analyze --level max src"
+            "vendor/bin/phpstan analyze --level max src"
         ],
         "phpmd": [
             "phpmd src xml test/rulesets.xml"
